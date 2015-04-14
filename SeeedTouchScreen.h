@@ -3,7 +3,14 @@
   Modified by loovee Aug 12, 2012.
   (c) ladyada / adafruit
   Code under MIT License.
+  
+  Modified by Gooseday April 14, 2015 - Added wrapper to make incorporation into
+  larger library collections easier.
 */
+
+#ifndef touch_screen_driver
+#define touch_screen_driver
+
 #define __PRESURE 10
 class Point {
     public:
@@ -27,3 +34,5 @@ class TouchScreen {
     Point getPoint();
 
 };
+
+#endif
